@@ -15,11 +15,11 @@
             grid-template-columns: minmax(200px, 1fr) 1fr 1fr;                                    
             background: #64cfff;            
         }
-        .teste{   
+        .principal{   
             margin-top: 10%;         
             padding-left: 20px;
-            padding-right: 20px;
-            background-color: #22b9ff;            
+            padding-right: 20px;            
+            background: linear-gradient(130deg, rgba(255,255,255,1) 0%, #22b9ff 100%);            
         }
         .formulario{ 
             margin-top: 10%;
@@ -61,8 +61,26 @@
         
         /*Responsividade*/
 
-        @media (max-width: 900px) {
-                
+        @media (max-width: 900px) {            
+            .principal{   
+                margin: 50% 0% 5% 0%;                
+            }
+            .formulario{ 
+                padding: 25px 85px 10px 45px;
+            }        
+
+            .titulo {
+                font-size: 14px;             
+            }
+            p {                
+                font-size: 12px;                
+            }
+            
+            #btnEnviar{                
+                width: 80%;
+                height: 20px;
+                font-size: 12px;
+            } 
         }
 
     </style>
@@ -71,7 +89,7 @@
     <header class="cabecalho">
         
     </header>
-<section class="teste">
+<section class="principal">
     <form class="formulario" action="" method="post">                        
         <h1 class="titulo">Pesquisa de satisfação</h1>
         <img class="imgPesquisa" src="https://external-preview.redd.it/rS8jaPHk6fTIlsRPVIqqGjM98y9t-mwtP_1Y8OYIQmw.jpg?auto=webp&s=9f551e049a8a839c8cc765e1591d4826b56d929c" alt="Pesquisa">
