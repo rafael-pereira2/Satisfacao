@@ -8,48 +8,61 @@
     <style>
         *{
             margin: 0;
-            padding: 0;
-            
+            padding: 0;            
         }
         body{
-            display: grid;
-            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;
-            background-color: rgb(147, 147, 147);
+            display: grid;            
+            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;                                    
+            background: #64cfff;            
         }
-        .formulario{
-            margin-top: 15%;
-            background-color: rgb(84, 84, 84);
+        .teste{   
+            margin-top: 10%;         
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: #22b9ff;            
         }
+        .formulario{ 
+            margin-top: 10%;
+            margin-bottom: 10%;   
+            border: 5px solid #ffff;  
+            border-radius: 20px;                  
+        }        
         .titulo {
             display: flex;
-            margin-left: 22%;               
+            margin-top: 3%;
+            margin-left: 24%;               
         }
         .imgPesquisa {
             display: flex;
             margin-top: 15px;
-            margin-left: 18%;
+            margin-left: 21%;
             width: 60%;
             height: 20%;                       
         }
-
         p {
             display: flex;            
             align-items: center;
             font-size: 18px;
-            margin: 10% 10% 10% 25%;
+            margin: 10% 10% 10% 28%;
         }
-
         #btnEnviar{
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 30%;
-            margin-bottom: 2%;
+            margin-bottom: 10%;            
             background-color: yellow;           
             font-size: 16px;
             width: 40%;
-            height: 7%;
+            height: 40px;
             border-radius: 10px;
+            cursor:pointer;
+        }        
+        
+        /*Responsividade*/
+
+        @media (max-width: 900px) {
+                
         }
 
     </style>
@@ -58,8 +71,8 @@
     <header class="cabecalho">
         
     </header>
-
-    <form class="formulario" action="/formulario-contato" method="post">                        
+<section class="teste">
+    <form class="formulario" action="" method="post">                        
         <h1 class="titulo">Pesquisa de satisfação</h1>
         <img class="imgPesquisa" src="https://external-preview.redd.it/rS8jaPHk6fTIlsRPVIqqGjM98y9t-mwtP_1Y8OYIQmw.jpg?auto=webp&s=9f551e049a8a839c8cc765e1591d4826b56d929c" alt="Pesquisa">
         <strong><p><input type="radio" name="opcao" value="MuitoSatisfatorio">&nbsp Mutio Satisfatorio</p>
@@ -68,9 +81,9 @@
         <p><input type="radio" name="opcao" value="Insatisfatorio">&nbsp Insatisfatorio</p></strong> 
         <button type="submit" id="btnEnviar"><strong>Enviar</strong></button>      
     </form>
+</section>
+    <footer class="rodape">
+
+    </footer>
 </body>
-<footer class="rodape">
-
-</footer>
-
 </html>
