@@ -9,6 +9,7 @@
         *{
             margin: 0;
             padding: 0;
+            
         }
         body{
             display: grid;
@@ -16,25 +17,26 @@
             background-color: rgb(147, 147, 147);
         }
         .formulario{
-            
-            background-color: rgb(105, 103, 103);
+            margin-top: 15%;
+            background-color: rgb(84, 84, 84);
         }
         .titulo {
             display: flex;
-            margin-left: 25%;                       
+            margin-left: 22%;               
         }
         .imgPesquisa {
             display: flex;
             margin-top: 15px;
-            margin-left: 20%;
-            width: 350px;
-            height: 150px;                       
+            margin-left: 18%;
+            width: 60%;
+            height: 20%;                       
         }
 
         p {
             display: flex;            
-            font-size: 12px;
-            margin: 10% 10% 10% 30%;
+            align-items: center;
+            font-size: 18px;
+            margin: 10% 10% 10% 25%;
         }
 
         #btnEnviar{
@@ -42,10 +44,11 @@
             justify-content: center;
             align-items: center;
             margin-left: 30%;
+            margin-bottom: 2%;
             background-color: yellow;           
-            font-size: 12px;
-            width: 210px;
-            height: 40px;
+            font-size: 16px;
+            width: 40%;
+            height: 7%;
             border-radius: 10px;
         }
 
@@ -59,11 +62,11 @@
     <form class="formulario" action="/formulario-contato" method="post">                        
         <h1 class="titulo">Pesquisa de satisfação</h1>
         <img class="imgPesquisa" src="https://external-preview.redd.it/rS8jaPHk6fTIlsRPVIqqGjM98y9t-mwtP_1Y8OYIQmw.jpg?auto=webp&s=9f551e049a8a839c8cc765e1591d4826b56d929c" alt="Pesquisa">
-        <p><input type="radio" name="opcao" value="MuitoSatisfatorio">Mutio Satisfatorio</p>
-        <p><input type="radio" name="opcao" value="Satisfatorio">Satisfatorio</p>
-        <p><input type="radio" name="opcao" value="Regular" checked>Regular</p>
-        <p><input type="radio" name="opcao" value="Insatisfatorio">Insatisfatorio</p>
-        <button type="submit" id="btnEnviar">Enviar</button>        
+        <strong><p><input type="radio" name="opcao" value="MuitoSatisfatorio">&nbsp Mutio Satisfatorio</p>
+        <p><input type="radio" name="opcao" value="Satisfatorio">&nbsp Satisfatorio</p>
+        <p><input type="radio" name="opcao" value="Regular" checked>&nbsp Regular</p>
+        <p><input type="radio" name="opcao" value="Insatisfatorio">&nbsp Insatisfatorio</p></strong> 
+        <button type="submit" id="btnEnviar"><strong>Enviar</strong></button>      
     </form>
 </body>
 <footer class="rodape">
