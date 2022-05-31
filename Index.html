@@ -12,7 +12,7 @@
         }
         body{
             display: grid;            
-            grid-template-columns: minmax(200px, 1fr) 1fr 1fr;                                    
+            grid-template-columns: minmax(90px, 1fr) 1fr 1fr;                                    
             background: #64cfff;            
         }
         .principal{   
@@ -63,21 +63,24 @@
 
         @media (max-width: 900px) {            
             .principal{   
-                margin: 50% 0% 5% 0%;                
+                margin: 25% 0% 5% 0%;                
             }
-            .formulario{ 
-                padding: 25px 85px 10px 45px;
-            }        
-
+            .formulario{                 
+                padding: 25px 70px 10px 40px;
+            } 
             .titulo {
-                font-size: 14px;             
+                font-size: 18px;
+                width: 180px;
+            }
+            .imgPesquisa {                
+                margin-left: 35%;
             }
             p {                
                 font-size: 12px;                
+                width: 120px;
             }
-            
             #btnEnviar{                
-                width: 80%;
+                width: 70%;
                 height: 20px;
                 font-size: 12px;
             } 
