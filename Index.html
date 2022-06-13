@@ -4,103 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Satisfação</title>
     <style>
         *{
-            margin: 0;
-            padding: 0;            
-        }
-        body{
-            display: grid;            
-            grid-template-columns: minmax(45px, 1fr) 1fr 1fr;                                    
-            background: #64cfff;            
-        }
-        .principal{   
-            margin-top: 10%;         
-            padding-left: 20px;
-            padding-right: 20px;            
-            background: linear-gradient(130deg, rgba(255,255,255,1) 0%, #22b9ff 100%);            
-        }
-        .formulario{ 
-            margin-top: 10%;
-            margin-bottom: 10%;   
-            border: 5px solid #ffff;  
-            border-radius: 20px;                  
-        }        
-        .titulo {
-            display: flex;
-            margin-top: 3%;
-            margin-left: 24%;               
-        }
-        .imgPesquisa {
-            display: flex;
-            margin-top: 15px;
-            margin-left: 21%;
-            width: 60%;
-            height: 20%;                       
-        }
-        p {
-            display: flex;            
-            align-items: center;
-            font-size: 18px;
-            margin: 10% 10% 10% 28%;
-        }
-        #btnEnviar{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-left: 28%;
-            margin-bottom: 10%;            
-            background-color: yellow;           
-            font-size: 16px;
-            width: 40%;
-            height: 40px;
-            border-radius: 10px;
-            cursor:pointer;
-        }        
-        
-        /*Responsividade*/
-
-        @media (max-width: 900px) {            
-            .principal{   
-                margin: 23% 0% 3% 0%;                
-            }
-            .formulario{                 
-                padding: 23px 66px 8px 34px;
-            } 
-            .titulo {
-                font-size: 18px;
-                width: 180px;
-            }
-            .imgPesquisa {                
-                margin-left: 35%;
-            }
-            p {                
-                font-size: 12px;                
-                width: 120px;
-            }
-            #btnEnviar{                
-                width: 70%;
-                height: 20px;
-                font-size: 12px;
-            } 
-        }
-
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    font-size: 100%;      
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    }
+    body{                        
+        background-color: #92342a;
+    }
+    .cabecalho{
+        display:flex;                        
+        align-items: center;
+        justify-content: center;
+        background-color: #540d07;
+        height: 70px;
+    }
+    .cabecalho-conteudo{
+        display: flex;    
+        width: 300px;
+        height:45px;                
+    }       
+    .titulo{
+        display: flex;                
+        align-items: center;
+        text-align: center;            
+        margin: 2% 22% 2% 22%;            
+        font-size: 40px;      
+    }     
+    strong{
+        margin-left: 20%;
+        margin-right: 20%;
+    }   
+    .reacao-tudo{ 
+        display: flex;
+        gap: 125px;     
+        margin-left: 25%;
+        margin-right: 20%;
+    }
+    .reacao{    
+        width: 70px;
+        height: 70px;
+    }
+    .texto-opcao{
+        display: flex;
+        gap: 120px; 
+        align-items: center;
+        text-align: center;            
+        padding-right:18px;
+        margin-left: 25%;
+        margin-right: 20%;
+    }
+    .opcao{
+        display: flex;
+        gap: 180px;            
+        padding-left:38px;    
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    button{          
+        display: flex;    
+        padding: 10px 30px 10px 14px;
+        margin-top: 2%;
+        margin-left: 48%;
+        border-radius: 10px;
+        background-color: #550d06;
+        font-size: 18px;
+    }
+    .rodape{
+        width: 100%;
+        height: 50px;
+        position: absolute;        
+        bottom: 0;
+        left: 0;
+        background-color: #540d07;  
+    }
     </style>
 </head>
 <body>
     <header class="cabecalho">
-        
+        <img class="cabecalho-conteudo" src="compremais.png" alt="Logo">
     </header>
 <section class="principal">
-    <form class="formulario" action="" method="post">                        
-        <h1 class="titulo">Pesquisa de satisfação</h1>
-        <img class="imgPesquisa" src="https://cdn.pixabay.com/photo/2018/11/17/01/28/paisagem-amazonica-3820445_1280.jpg" alt="Pesquisa">
-        <strong><p><input type="radio" name="opcao" value="MuitoSatisfatorio">&nbsp Mutio Satisfatorio</p>
-        <p><input type="radio" name="opcao" value="Satisfatorio">&nbsp Satisfatorio</p>
-        <p><input type="radio" name="opcao" value="Regular" checked>&nbsp Regular</p>
-        <p><input type="radio" name="opcao" value="Insatisfatorio">&nbsp Insatisfatorio</p></strong> 
+    <h1 class="titulo">Qual o seu grau de satisfação com a loja?</h1>  
+
+    <form class="formulario" action="" method="post">                                
+        <strong>                        
+            <div class="reacao-tudo">
+                <label for="MuitoSatisfeito"><img class="reacao" src="Asset_6@3x.png" alt="MuitoSatisfeito"></label>            
+                <label for="Satisfeito"><img class="reacao" src="Asset_1@3x.png" alt="Satisfeito"></label>
+                <label for="PoucoSatisfeito"><img class="reacao" src="Asset_5@3x.png" alt="PoucoSatisfeito"></label>    
+                <label for="MuitoInsatisfeito"> <img class="reacao" src="Asset_2@3x.png" alt="MuitoInsatisfeito"></label>
+            </div>
+
+            <div class="texto-opcao">
+                <label for="MuitoSatisfeito">Muito Satisfeito</label>
+                <label for="Satisfeito">Satisfeito</label>                
+                <label for="PoucoSatisfeito">Pouco Satisfeito</label>            
+                <label for="MuitoInsatisfeito">Muito Insatisfeito</label>
+            </div>
+
+            <div class="opcao">
+                <input type="radio" name="opcao" value="MuitoSatisfeito" id="MuitoSatisfeito">
+                <input type="radio" name="opcao" value="Satisfeito" id="Satisfeito" checked>
+                <input type="radio" name="opcao" value="PoucoSatisfeito" id="PoucoSatisfeito">
+                <input type="radio" name="opcao" value="MuitoInsatisfeito" id="MuitoInsatisfeito">
+            </div>
+
+        </strong> 
+        
         <button type="submit" id="btnEnviar"><strong>Enviar</strong></button>      
+
     </form>
 </section>
     <footer class="rodape">
