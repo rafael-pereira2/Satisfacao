@@ -32,21 +32,40 @@
         .titulo{
             display: flex;            
             width: 100%;            
-            margin: 2% 20% 2% 40%;            
+            margin: 2% 20% 2% 35%;            
+            font-size: 20px;
         }
-        .formulario{
-            
-            
-        }        
-        label{    
-            display: flex;        
-            padding: 2px 2px 2px 172px;                    
-            
-        }       
-        .reacao{
+          
+              
+        strong{
+            margin-left: 20%;
+            margin-right: 20%;
+        }   
+
+        .reacao-tudo{ 
             display: flex;
-            width: 80px;
-            height: 80px;
+            gap: 20%; 
+            margin-left: 26%;
+            margin-right: 30%;
+        }
+        .reacao{
+            width: 70px;
+            height: 70px;
+        }
+        .texto-opcao{
+            display: flex;
+            gap: 14%; 
+            align-items: center;
+            text-align: center;            
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+       .opcao{
+            display: flex;
+            gap: 25%;            
+            justify-content: center;
+            margin-left: 25%;
+            margin-right: 25%;
         }
         button{          
             display: flex;
@@ -72,17 +91,27 @@
 
     <form class="formulario" action="" method="post">                                
         <strong>                        
-            <label for="MuitoSatisfeito"><img class="reacao" src="Asset_6@3x.png" alt="MuitoSatisfeito">Muito Satisfeito</label>
+            <div class="reacao-tudo">
+                <label for="MuitoSatisfeito"><img class="reacao" src="Asset_6@3x.png" alt="MuitoSatisfeito"></label>            
+                <label for="Satisfeito"><img class="reacao" src="Asset_1@3x.png" alt="Satisfeito"></label>
+                <label for="PoucoSatisfeito"><img class="reacao" src="Asset_5@3x.png" alt="PoucoSatisfeito"></label>    
+                <label for="MuitoInsatisfeito"> <img class="reacao" src="Asset_2@3x.png" alt="MuitoInsatisfeito"></label>
+            </div>
+
+            <div class="texto-opcao">
+                <label for="MuitoSatisfeito">Muito Satisfeito</label>
+                <label for="Satisfeito">Satisfeito</label>                
+                <label for="PoucoSatisfeito">Pouco Satisfeito</label>            
+                <label for="MuitoInsatisfeito">Muito Insatisfeito</label>
+            </div>
+
+            <div class="opcao">
                 <input type="radio" name="opcao" value="MuitoSatisfeito" id="MuitoSatisfeito">
-                
-            <label for="Satisfeito"><img class="reacao" src="Asset_1@3x.png" alt="Satisfeito">Satisfeito</label>
-                <input type="radio" name="opcao" value="Satisfeito" id="Satisfeito">
-            
-            <label for="PoucoSatisfeito"><img class="reacao" src="Asset_5@3x.png" alt="PoucoSatisfeito">Pouco Satisfeito</label>
-                <input type="radio" name="opcao" value="PoucoSatisfeito" id="PoucoSatisfeito" checked>
-            
-            <label for="MuitoInsatisfeito"><img class="reacao" src="Asset_2@3x.png" alt="MuitoInsatisfeito">Muito Insatisfeito</label>
+                <input type="radio" name="opcao" value="Satisfeito" id="Satisfeito" checked>
+                <input type="radio" name="opcao" value="PoucoSatisfeito" id="PoucoSatisfeito">
                 <input type="radio" name="opcao" value="MuitoInsatisfeito" id="MuitoInsatisfeito">
+            </div>
+
         </strong> 
         
         <button type="submit" id="btnEnviar"><strong>Enviar</strong></button>      
