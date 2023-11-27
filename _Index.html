@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Satisfação</title>    
+    <style>
+    *{
+        margin: 0;   
+        padding: 0;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: 100%;      
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+    }
+    body{                                
+        background-color: #92342a;
+    }
+    .cabecalho{
+        display:flex;                        
+        align-items: center;
+        justify-content: center;
+        background-color: #540d07;
+        height: 70px;
+    }
+    .cabecalho-conteudo{
+        display: flex;    
+        width: 300px;
+        height:45px;                
+    }       
+    .titulo{
+        display: flex;                
+        align-items: center;
+        text-align: center;            
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 55px;
+        font-size: 40px;      
+    } 
+    .formulario{
+        display: flex;     
+        justify-content:center;               
+        text-align: center;  
+        margin-top: 150px;      
+    }            
+    .reacao{
+        display: flex;        
+        justify-content: space-between;
+        text-align: center;
+        gap: 40px;
+        width: 100px;      
+        margin-left: -210px;          
+    }    
+    .reacao-opc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    }
+    .reacao-imagem{
+        width: 100px;
+    }
+    #Satisfeito{
+        margin-top: 20px;
+    }
+    #btnEnviar{          
+        display: flex;  
+        justify-content: center;  
+        text-align: center;
+        align-items: center;
+        margin-top: 80px;
+        padding: 15px;        
+        border-radius: 10px;
+        background-color: #550d06;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    .rodape{
+        width: 100%;
+        height: 50px;
+        position: absolute;        
+        bottom: 0;
+        left: 0;
+        background-color: #540d07;  
+    }
+    </style>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-conteudo" src="compremais.png" alt="Logo">
+    </header>
+<section class="principal">
+    <h1 class="titulo">Qual o seu grau de satisfação com a loja?</h1>  
+
+    <form class="formulario" action="" method="post">                                
+        <strong>                        
+            <div class="reacao">
+                <div class="reacao-opc">
+                    <label for="MuitoSatisfeito"><img class="reacao-imagem" src="Asset_6@3x.png" alt="MuitoSatisfeito"></label>     
+                    <label for="MuitoSatisfeito">Muito Satisfeito</label>
+                    <input type="radio" name="opcao" value="MuitoSatisfeito" id="MuitoSatisfeito">
+                </div>
+                <div class="reacao-opc">
+                    <label for="Satisfeito"><img class="reacao-imagem" src="Asset_1@3x.png" alt="Satisfeito"></label>
+                    <label for="Satisfeito">Satisfeito</label>                
+                    <input type="radio" name="opcao" value="Satisfeito" id="Satisfeito" checked>
+                </div>
+                <div class="reacao-opc">
+                    <label for="PoucoSatisfeito"><img class="reacao-imagem" src="Asset_5@3x.png" alt="PoucoSatisfeito"></label>    
+                    <label for="PoucoSatisfeito">Pouco Satisfeito</label>            
+                    <input type="radio" name="opcao" value="PoucoSatisfeito" id="PoucoSatisfeito">
+                </div>
+                <div class="reacao-opc">
+                    <label for="MuitoInsatisfeito"> <img class="reacao-imagem" src="Asset_2@3x.png" alt="MuitoInsatisfeito"></label>
+                    <label for="MuitoInsatisfeito">Muito Insatisfeito</label>
+                    <input type="radio" name="opcao" value="MuitoInsatisfeito" id="MuitoInsatisfeito">
+                </div>                    
+            </div>    
+                <button type="submit" id="btnEnviar"><strong>Enviar</strong></button>        
+        </strong> 
+    </form>    
+</section>
+    <footer class="rodape">
+    </footer>
+</body>
+</html>
